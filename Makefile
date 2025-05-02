@@ -29,4 +29,4 @@ add-all:
 	git add .
 
 commit:
-	git commit -m "$(NAME)"
+	git commit -m "$(BRANCH)"
