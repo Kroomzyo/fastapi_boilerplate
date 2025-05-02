@@ -13,5 +13,20 @@ logs:
 	sudo docker logs -f test_app
 
 
-create-branch:
+create-branch-local:
 	git checkout -b $(BRANCH)
+
+push-to-remote:
+	git push -u origin $(BRANCH)
+
+switch-local:
+	git checkout $(BRANCH)
+
+pull:
+	git pull
+
+add-all:
+	git add .
+
+commit:
+	git commit -m "$(NAME)"
