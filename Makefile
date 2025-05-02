@@ -3,11 +3,11 @@ run-local:
 	uvicorn --factory main:create_app --host 0.0.0.0 --port 8000 --reload
 
 
-docker-build:
-	sudo docker-compose up --build -d
+docker-build-app1:
+	sudo docker-compose -f docker-compose/app1.yml up --build -d
 
-docker-down:
-	sudo docker-compose down
+docker-down-app1:
+	sudo docker-compose -f docker-compose/app1.yml down
 
 logs:
 	sudo docker logs -f test_app
