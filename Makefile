@@ -30,3 +30,6 @@ add-all:
 
 commit:
 	git commit -m "$(BRANCH)"
+
+ruff:
+	pre-commit run --all-files
